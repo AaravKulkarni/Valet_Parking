@@ -1,5 +1,5 @@
 canvas= document.getElementById("myCanvas");
-ctx.canvas.getContext("2d");
+ctx= canvas.getContext("2d");
 greencar_width= 75;
 greencar_height= 100;
 background_image = "parkingLot.jpg";
@@ -47,7 +47,7 @@ function up(){
 		greencar_y = greencar_y - 10;
 		console.log("When up arrow is pressed, x = "+greencar_x+" | y = "+greencar_y);
 		uploadBackground();
-		uploadrover();
+		uploadgreencar();
 		}
 }
 function down(){
